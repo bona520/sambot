@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Moulpali, Moul } from "next/font/google";
 import "../styles/globals.css";
 import DevTool from "@/components/layout/DevTool";
-import MasterLayout from "@/components/layout/MasterLayout";
 
 const MoulpaliFont = Moulpali({
   variable: "--font-moulpali",
@@ -60,12 +59,10 @@ export default function RootLayout({
         }} />
       </head>
       <body
-        className={`${MoulpaliFont.variable} ${MoulFont.variable} antialiased bg-secondary`}
+        className={`${MoulpaliFont.variable} ${MoulFont.variable} antialiased bg-secondary w-full h-[100dvh] flex items-center justify-center`}
       >
         <DevTool>
-          <MasterLayout>
-            {children}
-          </MasterLayout>
+          {children}
         </DevTool>
       </body>
     </html>
