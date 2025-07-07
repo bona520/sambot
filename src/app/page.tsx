@@ -32,7 +32,7 @@ export default function Home() {
           id="bg-front"
         >
           <source
-            src="videos/01.mp4"
+            src="https://ik.imagekit.io/yajs9avmf/2DV-Boprek-001_new.mp4?updatedAt=1746782385114"
             type="video/mp4"
           />
         </video>
