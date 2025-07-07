@@ -1,0 +1,7 @@
+@theme {
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+    --color-tertiary: var(--color-tertiary);
+    --font-moul: var(--font-moul), serif;
+    --font-moulpali: var(--font-moulpali), serif;
+}

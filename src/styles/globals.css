@@ -1,17 +1,9 @@
 @import "tailwindcss";
-
+@import "./theme.css" layer(theme);
 
 body {
-  background: var(--primary);
-  color: var(--secondary);
-  font-family: var(--font-moulpali), serif;
-}
-
-.font-moul {
-  font-family: var(--font-moul), serif;
-}
-
-.font-moulpali {
+  background: var(--color-primary);
+  color: var(--color-secondary);
   font-family: var(--font-moulpali), serif;
 }
 

@@ -23,7 +23,7 @@ const MoulFont = Moul({
 
 export const metadata: Metadata = {
   title: process.env.NEXT_PUBLIC_TITLE,
-  description: "An AI-powered chatbot for Telegram, built with Next.js and TypeScript.",
+  description: process.env.NEXT_PUBLIC_TITLE,
 };
 
 export const viewport: Viewport = {
@@ -38,13 +38,29 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Dynamic CSS variables from environment
+  const cssVariables = {
+    '--color-primary': process.env.NEXT_PUBLIC_PRIMARY_COLOR,
+    '--color-secondary': process.env.NEXT_PUBLIC_SECONDARY_COLOR,
+    '--color-tertiary': process.env.NEXT_PUBLIC_TERTIARY_COLOR,
+  };
+
   return (
     <html lang="en">
       <head>
         <title>{process.env.NEXT_PUBLIC_TITLE}</title>
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            :root {
+              --color-primary: ${cssVariables['--color-primary']};
+              --color-secondary: ${cssVariables['--color-secondary']};
+              --color-tertiary: ${cssVariables['--color-tertiary']};
+            }
+          `
+        }} />
       </head>
       <body
-        className={` ${MoulpaliFont.variable} ${MoulFont.variable} antialiased`}
+        className={`${MoulpaliFont.variable} ${MoulFont.variable} antialiased bg-secondary`}
       >
         <DevTool>
           <MasterLayout>
