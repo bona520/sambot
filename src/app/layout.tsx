@@ -21,8 +21,44 @@ const MoulFont = Moul({
 
 
 export const metadata: Metadata = {
-  title: process.env.NEXT_PUBLIC_TITLE,
-  description: process.env.NEXT_PUBLIC_TITLE,
+  title: "Devith & Boprek Invitation",
+  description:
+    "សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញ​ចូល​រួម​ជា​ភ្ញៀវ​កិត្តិយស ដើម្បី​ប្រសិទ្ធ​ពរជ័យ សិរីសួស្តី​ជ័យ​មង្គល​ក្នុង​ពិធី​សិរីមង្គល​អាពាហ៍ពិពាហ៍​របស់យើង​ខ្ញុំ",
+  robots: "follow, index, archive, imageindex",
+  icons: {
+    icon: "/img/favicon.png",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Welcome to Devith & Boprek Invitation Card",
+    description:
+      "សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញ​ចូល​រួម​ជា​ភ្ញៀវ​កិត្តិយស ដើម្បី​ប្រសិទ្ធ​ពរជ័យ សិរីសួស្តី​ជ័យ​មង្គល​ក្នុង​ពិធី​សិរីមង្គល​អាពាហ៍ពិពាហ៍​របស់យើង​ខ្ញុំ",
+    url: "https://sambot.online/devith_boprek",
+    siteName: "The Wedding of Devith & Boprek Invitation by Sambot.online",
+    images: [
+      {
+        url: "https://sambot.online/devith_boprek/img/img1.jpg",
+        secureUrl: "https://sambot.online/devith_boprek/img/img1.jpg",
+        alt: "The Wedding of Devith & Boprek Invitation by Sambot.online",
+        type: "image/jpeg",
+      },
+    ],
+    section: "Desain 9 - Demo",
+    tags: ["protokol indonesia"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Wedding of Devith & Boprek Invitation by Sambot.online",
+    description:
+      "សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញ​ចូល​រួម​ជា​ភ្ញៀវ​កិត្តិយស ដើម្បី​ប្រសិទ្ធ​ពរជ័យ សិរីសួស្តី​ជ័យ​មង្គល​ក្នុង​ពិធី​សិរីមង្គល​អាពាហ៍ពិពាហ៍​របស់យើង​ខ្ញុំ",
+    images: ["https://sambot.online/devith_boprek/img/img1.jpg"],
+  },
+  other: {
+    "article:tag": "protokol indonesia",
+    "article:section": "Desain 9 - Demo",
+    "og:updated_time": "2024-06-14T18:34:05+07:00",
+  },
 };
 
 export const viewport: Viewport = {
@@ -47,34 +83,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="description"
-          content="សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញ​ចូល​រួម​ជា​ភ្ញៀវ​កិត្តិយស ដើម្បី​ប្រសិទ្ធ​ពរជ័យ សិរីសួស្តី​ជ័យ​មង្គល​ក្នុង​ពិធី​សិរីមង្គល​អាពាហ៍ពិពាហ៍​របស់យើង​ខ្ញុំ"
-        />
-        <meta name="robots" content="follow, index, archive, imageindex" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Welcome to test &amp; test Invitation Card" />
-        <meta
-          property="og:description"
-          content="សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញ​ចូល​រួម​ជា​ភ្ញៀវ​កិត្តិយស ដើម្បី​ប្រសិទ្ធ​ពរជ័យ សិរីសួស្តី​ជ័យ​មង្គល​ក្នុង​ពិធី​សិរីមង្គល​អាពាហ៍ពិពាហ៍​របស់យើង​ខ្ញុំ"
-        />
-        <meta property="og:url" content="https://sambot.online/devith_boprek" />
-        <meta property="og:site_name" content="The Wedding of test &amp; test Invitation by Sambot.online" />
-        <meta property="article:tag" content="protokol indonesia" />
-        <meta property="article:section" content="Desain 9 - Demo" />
-        <meta property="og:updated_time" content="2024-06-14T18:34:05+07:00" />
-        <meta property="og:image" content="https://sambot.online/devith_boprek/img/img1.jpg" />
-        <meta property="og:image:secure_url" content="https://sambot.online/devith_boprek/img/img1.jpg" />
-        <meta property="og:image:alt" content="The Wedding of Devith &amp; Boprek Invitation by Sambot.online" />
-        <meta property="og:image:type" content="https://sambot.online/devith_boprek/img/img1.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="The Wedding of test &amp; test Invitation by Sambot.online" />
-        <meta
-          name="twitter:description"
-          content="សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញ​ចូល​រួម​ជា​ភ្ញៀវ​កិត្តិយស ដើម្បី​ប្រសិទ្ធ​ពរជ័យ សិរីសួស្តី​ជ័យ​មង្គល​ក្នុង​ពិធី​សិរីមង្គល​អាពាហ៍ពិពាហ៍​របស់យើង​ខ្ញុំ"
-        />
-        <meta name="twitter:image" content="https://sambot.online/devith_boprek/img/img1.jpg" />
         <style dangerouslySetInnerHTML={{
           __html: `
             :root {
