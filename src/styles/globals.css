@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+
+body {
+  background: var(--primary);
+  color: var(--secondary);
+  font-family: var(--font-moulpali), serif;
+}
+
+.font-moul {
+  font-family: var(--font-moul), serif;
+}
+
+.font-moulpali {
+  font-family: var(--font-moulpali), serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4747477c;
+  border-radius: 10px;
+  transition: 0.05s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30303099;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 4px;
+  background: transparent !important;
+}
+
+
+.is-rotate {
+  display: flex;
+}
+
+.is-rotate.landscape {
+  display: none;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .is-rotate {
+    display: none;
+  }
+
+  .is-rotate.landscape {
+    display: flex;
+  }
+
+  .bg-dev {
+    background: red;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .is-rotate {
+    display: none;
+  }
+
+  .is-rotate.landscape {
+    display: flex;
+  }
+
+  .bg-dev {
+    background: blue;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .is-rotate {
+    display: none;
+  }
+
+  .is-rotate.landscape {
+    display: flex;
+  }
+
+  .bg-dev {
+    background: green;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .is-rotate {
+    display: none;
+  }
+
+  .is-rotate.landscape {
+    display: flex;
+  }
+
+  .bg-dev {
+    background: yellow;
+  }
+}
