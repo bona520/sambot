@@ -21,13 +21,10 @@ const MoulFont = Moul({
 
 
 export const metadata: Metadata = {
-  title: "Devith & Boprek Invitation",
+  title: process.env.NEXT_PUBLIC_TITLE,
   description:
     "សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញ​ចូល​រួម​ជា​ភ្ញៀវ​កិត្តិយស ដើម្បី​ប្រសិទ្ធ​ពរជ័យ សិរីសួស្តី​ជ័យ​មង្គល​ក្នុង​ពិធី​សិរីមង្គល​អាពាហ៍ពិពាហ៍​របស់យើង​ខ្ញុំ",
   robots: "follow, index, archive, imageindex",
-  icons: {
-    icon: "/img/favicon.png",
-  },
   openGraph: {
     locale: "en_US",
     type: "article",
